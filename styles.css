@@ -6,7 +6,7 @@
     --veryDarkCyan: hsl(179, 100%, 13%);
     --transWhite: hsla(0, 0%, 100%, 0.75); /* (paragraphs) */
     --veryLightGray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
-    --Inter: "Inter", sans-serif;
+    --bigShoulders: "Big Shoulders Display", sans-serif;
     --Deca: "Lexend Deca", sans-serif;
 }
 
@@ -23,7 +23,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     font-size: 15px;
 }
 
@@ -32,6 +31,97 @@ body{
     border-radius: 5px;
     overflow: hidden;
     flex-flow: column;
-    margin: 0 10%;
-    width: 50%;
+    margin: 10% 10%;
+    width: 80%;
+}
+
+section{
+    padding: 0 10% 10% 10%;
+    padding-top: 34px;
+    line-height: 25px;
+    text-align: left;
+    color: var(--transWhite);
+    font-family: var(--Deca);
+}
+
+section:nth-of-type(1){
+    background-color: var(--brightOrange);
+}
+
+section:nth-of-type(2){
+    background-color: var(--darkCyan);
+}
+
+section:nth-of-type(3){
+    background-color: var(--veryDarkCyan);
+}
+
+section img{
+    padding-bottom: 34px;
+}
+
+section h1{
+    font-family: var(--bigShoulders);
+    text-transform: uppercase;
+    color: var(--veryLightGray);
+    font-size: 30px;
+    padding-bottom: 34px;
+}
+
+section p{
+    padding-bottom: 50px;
+}
+
+section button{
+    background-color: var(--veryLightGray);
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 15px;
+    font-family: var(--Deca);
+}
+
+.butt1{
+    color: var(--brightOrange);
+}
+
+.butt1:hover{
+    background-color: var(--brightOrange);
+    color: var(--transWhite);
+    border: 1px solid var(--transWhite);
+}
+
+.butt2{
+    color: var(--darkCyan);
+}
+
+.butt2:hover{
+    background-color: var(--darkCyan);
+    color: var(--transWhite);
+    border: 1px solid var(--transWhite);
+}
+
+.butt3{
+    color: var(--veryDarkCyan);
+}
+
+.butt3:hover{
+    background-color: var(--veryDarkCyan);
+    color: var(--transWhite);
+    border: 1px solid var(--transWhite);
+}
+
+@media only screen and (min-width: 1024px){
+    .card{
+        flex-flow: row;
+    }
+
+    section{
+        padding: 40px 20px;
+    }
+
+    section p{
+        padding-bottom: 100px;
+    }
 }
